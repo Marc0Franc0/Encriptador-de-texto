@@ -1,232 +1,341 @@
-body {
-  position: relative;
-
-  /* Light blue/light-blue-100 */
-padding: 0;
-margin: 0;
-  background: #f3f5fc;
-  
+* {
+  margin: 0;
+  padding: 0; 
 }
-.container-app {
-  min-width: 100%;
-  height: 100vh;
 
+body {
+  background-color: #eee;
+ 
+}
+
+.main-container {
+
+  display: flex;  
+  background-color: #eee;
+  justify-content: center;
+margin-top: 0px;
+padding: 10px;
+
+
+}
+
+.container {
+
+  width: 100%;
+margin-top:0px;
+  border-radius: 10px;
+ 
+}
+
+img {
+ 
+}
+
+.form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  width: auto;
+  height: 80vh;
+  margin: 2rem;
 }
-textarea {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  overflow: auto;
-  height: 200px;
-  font-size: 32px;
-  margin-top: 0px;
-  margin-left: 50px;
-  margin-bottom: 300px;
-  width: 600px;
-  resize: none;
-  /* identical to box height, or 48px */
 
-  /* Dark blue/dark-blue-300 */
+.part1 {
+  width: 60%;
+  margin-right: 80px;
+}
+
+#input-text {
+  background-color: #eee;
+  width: 90%;
+  height: 70%;
+  resize: none;
+  margin: auto;
+  text-align: center;
   border: none;
-  color: #0a3871;
-  background-color: transparent;
+  color: #0A3871;
+  font-size: 20px;
   outline: none;
 }
-
-textarea::placeholder {
-  color: #0a3871;
+#input-text::placeholder{
+  color: #0A3871;;
+}
+p {
+  margin-right: 36%;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.img-logo {
- display: block;
- margin-bottom: 650px;
-  
-}
-
-.campo-de-texto {
-  height: 100px;
-}
-
-.sugerencia {
-  display: block;
-
-  padding: 0px;
-  gap: 8px;
-  position: absolute;
-  width: 1200px;
-  height: 18px;
-  margin-left: 0px;
-  margin-top: 550px;
-}
-
-.sugerencia p {
-  width: 205px;
-  height: 18px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-
-  /* identical to box height, or 18px */
-
-  /* Gray/gray-400 */
-
-  color: #495057;
-
-  opacity: 0.8;
-
-
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-
-  position: absolute;
-  width: 1200px;
-  height: 67px;
-  margin-left: 0px;
-  margin-top: 700px;
-}
-div button {
-  width: 400px;
-  height: 19px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+.btn-container {
   display: flex;
   justify-content: center;
-
-  /* White */
-
-  color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
 }
 
-.button-encriptar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
-  width: 328px;
-  height: 67px;
-
-  /* Dark blue/dark-blue-300 */
-
-  background: #0a3871;
+#btnEncrypt  {
+  font-size: 18px;
+  width: 300px;
+  margin-right: 10px;
+  padding: 15px 0 15px 0;
   border-radius: 24px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  border: none;
+  background-color: darkblue;
+  color: white;
 }
 
-.button-desencriptar {
-  box-sizing: border-box;
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
-  width: 328px;
-  height: 67px;
-
-  /* Light gray */
-
-  background: #d8dfe8;
-  /* Dark blue/dark-blue-300 */
-
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-  color: #0a3871;
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+#btnEncrypt:hover {
+  background-color: white;
+  border: 2px solid #00008B;
+  color: darkblue;
 }
 
-.container-img-muñeco {
-  
-  width: 400px;
-margin-left: 200px;
-  height: 700px;
-  margin-top: 40px;
-  display: block;
-  /* White */
-
-  background: #ffffff;
-  /* shadow */
-
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
+#btnDecrypt {
+  font-size: 18px;
+  width: 300px;
+  padding: 15px 0 15px 0;
+  margin-left: 5px;
+  border: 2px solid #00008B;
+  border-radius: 24px;   
+  color: darkblue;
 }
-.container-img-muñeco h1{
 
-  width: 336px;
-  height: 58px;
-  margin-left: 30px;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-/* or 29px */
-
-text-align: center;
-
-/* Gray/gray-500 */
-
-color: #343A40;
+#btnDecrypt:hover {
+  border: none;
+  background-color: darkblue;
+  color: white;
+  border: 2px solid #00008B;
 }
-.container-img-muñeco p{
 
-  width: 100px;
-  /* Control de la altura con base en el texto del div*/
-  height: auto;
+.part2 {
+  width: 40%;
+  position: relative;
+ 
+}
+
+#respuesta{
+  margin: 0 auto;
+  height: 70%;
+ 
+}
+
+#respuesta textarea{
+  background-color: #eee;
+  min-height: 400px;
+ min-width: 300px;
+  resize: none;
+  color: #0A3871;
+  font-size: 15px;
+  border: none;
   word-wrap: break-word;
-  width: 336px;
-  height: 58px;
-  margin-left: 30px;font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  /* or 24px */
-  
+  outline: none;
   text-align: center;
-  
-  /* Gray/gray-400 */
-  
-  color: #495057;
+ 
 }
-.img-muñeco {
-margin-top: 0px;
+.container-btncopy{
+margin: 0 auto;
+
+}
+
+#btnCopy {
+
+  font-size: 18px;
   width: 250px;
-  margin-left: 50px;
-  /* Dark blue/dark-blue-300 */
+  padding: 15px 0 15px 0;
+  border: 2px solid #00008B;
+  border-radius: 24px;   
+  color: darkblue;
+  position: absolute;
+  bottom: 0;
+margin-bottom: 80px;
+  display: none;
+
+}
+
+#btnCopy:hover {
+  border: none;
+  background-color: darkblue;
+  color: white;
+  border: 2px solid #00008B;
+}
+
+.image-container {
+
+position: absolute;
+top: 0rem;
+left: 0;
+}
+.image-container img {
+margin: auto;
+}
+
+.popup {
+position: fixed;
+top: 20px;
+right: 20px;
+padding: 10px;
+background-color: #00008B;
+color: white;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+z-index: 9999;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 16px;
+}
+.main-header {
+  background-color: #F3F5FC;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+.social { 
+margin: 0;
+width: 40px;
+margin-left: 10px;
+margin-right: 10px;
+cursor:pointer;
+}
+
+.autor-name {
+  font-size: 20px;
+  font-family: monospace;
+  font-weight:bold;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1370px) {
+  .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 88%;
+  }
+  .image-container img {
+      width: 260px;
+  }
+
+  #btnCopy {
+      left: 4rem;
+      width: 160px;
+      padding: 12px 0 12px 0;
+  }
+}
+@media screen and (max-width: 1090px) {
+ 
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.container {
+  width: 90%;
+}
+
+#image{
+  display: none;
+}
+
+.part1 {      
+    margin: 0;
+    width: 90%
+}
+
+.part2 {
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#input-text {
+    width: 100%;
+    height: 30vh;
+}
+
+.image-container {
+    position: absolute;
+    top: 2rem;
+    left: 6%;
+}
+
+#btnCopy {
+    left: 40%;
+}
+}
+
+
+@media screen and (max-width: 520px) {
+  .logo {
+      width: 100px
+  }
+
+  #input-text {
+      font-size: 15px;
+  }
+
+  p {
+      font-size: 12px;
+      margin-bottom: 12px;
+  }
+
+  .advertencia {
+      margin-right: 5px;
+  }
+
+  #btnEncrypt {
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 0 10px 0;
+  }
+
+  #btnDecrypt {
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 0 10px 0;
+  }
+
+  #show-text {
+      font-size: 15px;
+  }
+
+  .part2  {
+      margin-bottom: 6rem;
+  }
+#respuesta{
+  width: 300px;
+}
+  #btnCopy {
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 0 10px 0;
+      left: 25%;
+      margin-bottom: -70px;
+      bottom: 0;
+  }
+
+  @media screen and (max-width: 520px) {
+      #btnCopy {
+          left: 16%;
+      }
+
+      .autor-name {
+          font-size: 18px;
+      }
+
+      .social-container {
+          width: 40%;
+      }
+
+      .social {
+          width: 30px;
+      }
+  }
 }

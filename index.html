@@ -1,54 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Encriptador de texto</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="assets/logo.ico" />
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
-<body>  
-
-    <div class="container-app">
-    <img class="img-logo" src="images/logo.png" alt="logo" />
-
-<div class="container-input">
-        <textarea placeholder="Ingrese el texto aquí" id="textoingresado"></textarea>
-</div>
-
-        <div class="sugerencia">
-           <p>Solo letras minúsculas y sin acentos</p> 
-        </div>
-
-        <div class="buttons">
-            
-            <button  class="button-encriptar" onclick='encriptar()'>Encriptar</button>
-            <button  class="button-desencriptar" onclick="desencriptar()">Desencriptar</button>
-        </div>
-
-
-<div class="container-img-muñeco">
-    <p id="rta"></p>
-    <div id="sin-rta">
-         <img class="img-muñeco" src="images/Muñeco.png"/>
-    <h1>Ningún mensaje fue encontrado</h1>
-    <p> Ingresa el texto que desees encriptar o desencriptar.</p>
+<body>
+  <header class="header">
+    <div class="main-header">
+      <p class="autor-name"><b>Marco Franco</b></p>
+      <div class="social-container">
+        <a href="https://github.com/Marc0Franc0" target="_blank"><img src=" assets/github.png" alt="" class="social"></a>
+        <a href="https://www.linkedin.com/in/marco-lisandro-franco/" target="_blank"><img src="assets/linkedin.png" alt=""
+            class="social"></a>
+      </div>
     </div>
-   
+  </header>
+  <div class="main-container"> <i class="fas fa-user"></i>
+    <div class="container">
+      <img src="assets/logo.png" alt="logo alura" class="logo">
+      <div class="form-container">
+        <div class="part1">
+          <textarea placeholder="Ingrese el texto aqui" id="input-text"></textarea>
+          <p><img src="assets/adevertencia.png" alt="" class="advertencia">Solo letras minusculas y sin acentos</p>
+          <div class="btn-container">
+            <button id="btnEncrypt" onclick="encriptar()">Encriptar</button>
+            <button id="btnDecrypt" onclick="desencriptar()">Desencriptar</button>
+          </div>
+        </div>
+        <div class="part2">
+          <div id="respuesta">
+            <textarea id="text-rta"></textarea>
+            <button id="btnCopy" onclick="copiarAlPortapapeles()">Copiar</button>
+          </div>
+          <div class="image-container">
 
-</div>
 
+            <div id="sin-rta"> <img src="assets/Muñeco.png" alt="muñeco" id="image" />
+              <img src="assets/Frame5.png" alt="">
+            </div>
+            <div class="container-btncopy">
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
-  
+  </div>
 
-
-        
-
-
-    <script src="main.js"></script>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
